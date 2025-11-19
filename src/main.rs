@@ -29,7 +29,8 @@ async fn main() {
             .as_secs();
 
         println!(
-            "block {block_number}, block_timestamp = {block_timestamp}, current_timestamp = {current_timestamp}",
+            "block {block_number}: current_timestamp - block_timestamp = {}s",
+            current_timestamp - block_timestamp,
         );
     }
 }
